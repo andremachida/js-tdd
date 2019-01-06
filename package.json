@@ -15,7 +15,7 @@
     "tdd"
   ],
   "author": "Andre Machida <andmachida@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/andremachida/js-tdd/issues"
   },
