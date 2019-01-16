@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,9 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015-native-modules": "^6.9.4",
+    "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
