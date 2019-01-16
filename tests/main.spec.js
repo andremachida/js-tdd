@@ -24,4 +24,7 @@ describe('Main', () => {
   it('Should return the number when non-multiple of 3', () => {
     expect(FizzBuzz(7)).to.be.equal(7);
   });
+  it('Should return 0 when number 0', () => {
+    expect(FizzBuzz(0)).to.be.equal(0);
+  });
 });
